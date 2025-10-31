@@ -1,0 +1,25 @@
+{
+  "name": "tourze/tls-cert-store",
+  "description": "TLS 证书存储和管理组件，提供 X.509 证书的加载、解析和存储功能",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "tourze/tls-common": "0.0.*",
+    "tourze/tls-x509-core": "0.0.*"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^2.1",
+    "phpunit/phpunit": "^11.5",
+    "tourze/phpunit-base": "1.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Tourze\\TLSCertStore\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tourze\\TLSCertStore\\Tests\\": "tests/"
+    }
+  }
+}
